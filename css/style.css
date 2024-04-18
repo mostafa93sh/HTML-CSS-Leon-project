@@ -245,6 +245,12 @@ max-width: 294px;
     margin: 30px 0;
 
 }
+@media screen and (max-width:1200px) {
+    .services .container .content-section{
+        grid-template-columns:repeat(auto-fill,minmax(300px, 1fr)) ;
+        grid-template-rows: repeat(auto-fill,200px);
+    }
+}
 @media screen and (max-width:992px) {
     .services .container .content-section{
         grid-template-columns:repeat(2,minmax(300px, 1fr)) ;
@@ -313,4 +319,9 @@ max-width: 294px;
 }
 .services .container .content-section .image img{
     width: 260px;
+}
+@media screen and  (max-width:1200px) {
+    .services .container .content-section .image{
+        display:none;
+    }
 }
