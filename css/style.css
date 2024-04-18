@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    
+    color: #333;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+/* header section  */
+.header{
+    padding: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+}
+.header .container .logo {
+    flex-basis: 60px;
+}
+.header .container .logo img{
+    max-width: 100%;
+}
+.header .container .drop-list{
+    flex-basis: 100px;
+    position: relative;
+}
+.header .container .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    height: 21px;
+    
+}
+.header .container .menu span{
+    background-color: #333;
+    height: 2px;
+    display: inline-block;
+    width: 28px;transition-duration:0.5s;
+}
+.header .container .menu span:nth-child(2){
+    width: 18px;
+}
+
+.header .container .hidden-list{
+    position: absolute;
+    right: 48px;
+    top: -13px;
+    width: 150px;
+}
+.header .container .hidden-list ul{
+    list-style: none;
+    display: none;
+    font-size: 20px;
+    background-color: #f6f6f6;
+    padding: 5px ;
+    margin: 0px;
+    border-radius: 7px;
+}
+.header .container .drop-list:hover .menu span:nth-child(2){
+    width: 28px;
+
+}
+.header .container .drop-list:hover .hidden-list ul {
+    display: block;
+}
+
+
+.header .container .hidden-list ul li{
+    padding: 7px 13px;
+}
+
+.header .container .hidden-list ul li:not(.header .container .hidden-list ul li:last-child){
+    border-bottom: 1px solid #777;
+}
+.header .container .hidden-list ul li a{
+    text-decoration: none;
+    columns: #555;
+    transition: 0.4s;
+}
+.header .container .hidden-list ul li a:hover{
+    padding-left: 4px;
+}
+@media screen and (max-width:600px){
+    .header{
+        padding: 15px;
+       
+    }
+    .header .container .logo {
+        flex-basis: 40px;
+    }
+    .header .container .menu span{
+        background-color: #333;
+        height: 2px;
+        display: inline-block;
+        width: 25px;
+        transition-duration:0.5s;
+    }
+    .header .container .menu span:nth-child(2){
+        width: 15px;
+    }
+    .header .container .hidden-list{
+        position: absolute;
+        right: 65px;
+        top: 19px;
+        width: 115px;
+    }
+    .header .container .hidden-list ul{
+        list-style: none;
+        display: none;
+        font-size: 16px;
+        background-color: #f6f6f6;
+        padding: 3px ;
+        margin: 0px;
+        border-radius: 5px;
+    }
+    .header .container .drop-list:hover .menu span:nth-child(2){
+        width: 25px;
+    
+    }
+    .header .container .hidden-list ul li{
+        padding: 5px 11px;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------*/
+.landing{
+    height: calc(100vh - 64px);
+    background-image: url('/images/landing.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+.landing .intro-text{
+text-align: center;
+max-width: 294px;
+}
+.landing .intro-text h1{
+    color: #10cab7;
+    font-weight: 700;
+    font-size: 50px;
+}
+.landing .intro-text p{
+    font-size: 19px;
+    line-height: 1.7;
+}
+@media screen and (max-width:768px){
+    .landing .intro-text h1{
+        color: #10cab7;
+        font-weight: 700;
+        font-size: 37px;
+    }
+    .landing .intro-text p{
+        font-size: 7;
+        line-height: 1.5;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------*/
+/* skills section  */
+.skills{
+    padding: 60px 0;
+    background-color: #f6f6f6;
+    min-height: 400px;
+}
+/* @media screen and (min-width:600px){
+
+} */
+.skills .container{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* @media screen and (min-width:600px){
+    .skills .container{
+        flex-direction: column;
+    }
+} */
+.skills .container .card{
+    text-align: center;
+    max-width: 300px;
+}
+.skills .container .card .icon i{
+    font-size: 50px;
+    color: #10cab7;
+}
+
+/* services */
+/* services */
+/* services */
+/* services */
+.services{
+    min-height: 100vh;
+}
+.services .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.services .container .intro-section{
+    flex-basis: 150px;
+    text-align: center;
+    margin: 25px 0;
+}
+.services .container .intro-section h3{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.services .container .intro-section p{
+    margin-top: -28px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #777;
+}
+@media screen and (max-width:600px) {
+    .services .container .intro-section h3{
+        font-size: 80px;
+    }
+    .services .container .intro-section p{
+        font-size: 17px;
+    }
+}
+.services .container .content-section{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px,400px)) ;
+    grid-template-rows: repeat(2,200px);
+    gap:20px;
+    justify-content: center;
+    margin: 30px 0;
+
+}
+@media screen and (max-width:992px) {
+    .services .container .content-section{
+        grid-template-columns:repeat(2,minmax(300px, 1fr)) ;
+        grid-template-rows: repeat(auto-fill,200px);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .services .container .content-section{
+        grid-template-columns: minmax(300px, 1fr);
+        grid-template-rows: repeat(auto-fill,200px);
+    }
+}
+.services .container .content-section div{
+    /* background-color: #10cab7; */
+    height: 200px;
+}
+.services .container .content-section div{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.services .container .content-section  .icon{
+    width: 17%;
+    height: 75%;
+}
+.services .container .content-section  .icon i{
+    color: #10cab7;
+    font-size: 32px;
+}
+.services .container .content-section  .text{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 75%;
+    
+}
+.services .container .content-section  .text h4,
+.services .container .content-section  .text p{
+    margin: 10px;
+    margin-top: 0;
+    padding: 0;
+}
+.services .container .content-section  .text h4{
+    font-size: 21px;
+}
+.services .container .content-section  .text p{
+    line-height: 1.6;
+    color: #444;
+}
