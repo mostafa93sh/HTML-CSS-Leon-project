@@ -535,3 +535,90 @@ position: relative;
 /* ========================================================================================================= */
 /* ========================================================================================================= */
 /* ========================================================================================================= */
+.contact-me{
+    min-height: calc(100vh - 100px);
+    background-color: #f6f6f6;
+    padding: 40px 0;
+}
+.contact-me .container{
+    max-width: 88%;
+    margin: auto;
+}
+.contact-me .container .intro-text{
+    text-align: center;
+    flex-basis: 200px;
+}
+
+.contact-me .container .intro-text h4{
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    color: #dfe0e2;
+    margin: 0;
+}
+.contact-me .container .intro-text p{
+    color: #797979;
+    font-size: 20px;
+    margin: 0;
+    margin-top: -30px;
+}
+@media screen and (max-width:1200px) {
+    .contact-me .container .intro-text h4{
+        font-size: 95px;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    .contact-me .container .intro-text h4{
+        font-size: 85px;
+    }
+    .contact-me .container .intro-text p{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:600px) {
+    .contact-me .container .intro-text h4{
+        font-size: 80xpx;
+    }
+    .contact-me .container .intro-text p{
+        font-size: 18px;
+    }
+}
+.contact-me .container .content-text{
+   
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-me .container .content-text h4{
+    margin: 0;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+.contact-me .container .content-text h4:first-child{
+    color: #2c4755;
+}
+.contact-me .container .content-text h4 a{
+    color: #10cab7;
+    text-decoration: none;
+
+}
+
+.contact-me .container .content-text .social{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-me .container .content-text .social .social-icons i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
