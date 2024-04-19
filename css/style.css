@@ -325,3 +325,112 @@ max-width: 294px;
         display:none;
     }
 }
+/* PORTFOLIO SECTION */
+/* PORTFOLIO SECTION */
+/* PORTFOLIO SECTION */
+/* PORTFOLIO SECTION */
+.portfolio{
+    background-color: #f6f6f6;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+.portfolio .container{
+    margin: auto;
+    max-width: 88%;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio .container .intro-text{
+    text-align: center;
+    flex-basis: 200px;
+}
+.portfolio .container .intro-text h4{
+    color: #ebeced;
+    font-size: 100px;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.portfolio .container .intro-text p{
+    color: #797979;
+    font-size: 20px;
+    margin: 0;
+    margin-top: -30px;
+    
+}
+@media screen and (max-width:1200px) {
+    .portfolio .container .intro-text h4{
+        color: #ebeced;
+        font-size: 90px;
+        letter-spacing: -3px;
+        margin: 0;
+    }
+    .portfolio .container .intro-text p{
+        color: #797979;
+        font-size: 19px;
+        margin: 0;
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width:992px) {
+    .portfolio .container .intro-text h4{
+        color: #ebeced;
+        font-size: 80px;
+        letter-spacing: -3px;
+        margin: 0;
+    }
+    .portfolio .container .intro-text p{
+        color: #797979;
+        font-size: 18px;
+        margin: 0;
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width:600px) {
+    .portfolio .container .intro-text h4{
+        color: #ebeced;
+        font-size: 75px;
+        letter-spacing: -3px;
+        margin: 0;
+    }
+    .portfolio .container .intro-text p{
+        color: #797979;
+        font-size: 17px;
+        margin: 0;
+        margin-top: -30px;
+    }
+}
+.portfolio .container .content-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    gap: 20px;
+}
+.portfolio .container .content-section .card{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.portfolio .container .content-section .card .card-image{
+    width: 100%;
+}
+.portfolio .container .content-section .card .card-image img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.portfolio .container .content-section .card .card-text{
+    padding: 10px 15px;
+}
+.portfolio .container .content-section .card .card-text h4{
+    font-size: 1.17em;
+    margin: 0;
+}
+.portfolio .container .content-section .card .card-text p{
+    margin: 0;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+
