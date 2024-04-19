@@ -439,6 +439,7 @@ max-width: 294px;
 /* ABOUT ME SECTION ============================================================================ */
 .about-me{
     min-height: 100vh;
+    margin: 50px;
 }
 .about-me .container{
     max-width: 88%;
